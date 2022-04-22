@@ -222,3 +222,35 @@ function checkFor(arr) {
   }alert('We close in an hour!')
 }
 
+// Create a function that takes in 3 numbers.
+//Console log lowest and highest values with 100,50,25. Call the 
+//function.
+
+
+function threeNums(n1,n2,n3) {
+  let min =  Math.min(n1,n2,n3)
+  let max = Math.max(n1,n2,n3)
+  console.log(`The lowest number is ${min} and the highest is ${max}`)
+}
+threeNums(100,50,25)
+
+//Create a function that takes in an array of numbers
+function takesInArrOf(numbers) {
+let sorted = arr.sort((a,b)=>a-b)
+//Alert the sum of the second lowest and the second 
+//highest number by sorting the array
+alert(sorted [1] + sorted[sorted.length])
+}
+
+//Get a dog photo from the dog.ceo api and place the
+//photo in the DOM
+
+fetch("https://dog.ceo/api/breeds/image/random")
+.then(res => res.json())
+.then(data => {
+    console.log(data.message)
+    document.querySelector('img').src = data.message
+})
+.catch(err => {
+    console.log(`error ${err}`)
+})
