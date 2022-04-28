@@ -11,6 +11,11 @@ function betterThanAverage(classPoints, yourPoints) {
         return yourPoints > classPoints.reduce((a, b) => a + b, 0) / classPoints.length; 
       }
 
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * *  * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * *  * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * *  * * * * * * * * * * *  * * * * * * * * 
+
 
 
 //Create a function that returns heads or tails 
@@ -29,6 +34,12 @@ console.log(result)
   flipFlip(10)
 }
 
+// * * * * * * * * * * *  * * * * * * * *  * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+
+
 
 //In this simple exercise, you will build a program that takes a 
 //value, integer , and returns a list of its multiples up to another 
@@ -44,6 +55,14 @@ function MultipleValues(integer, limit) {
   return v;
 }
       
+
+// * * * * * * * * * * *  * * * * * * * *  * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+
+
+
 //Create a function that grabs the number of snacks 
 // from the input and tells you to stop that many times
 
@@ -56,6 +75,13 @@ function grabsNumbofSnacks() {
     document.querySelector('h2').innerText += 'stop'
   }
 }
+
+
+// * * * * * * * * * * *  * * * * * * * *  * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+
 
 
 //Your task is to find a way to merge two arrays into a single one,
@@ -74,6 +100,12 @@ let arr = arr1.concat(arr2).sort((a,b) => a-b)
 }
 
 
+
+// * * * * * * * * * * *  * * * * * * * *  * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+
 //Create a method each_cons that accepts a list and a number n, 
 //and returns cascading subsets of the list of size n, like so:
 
@@ -91,6 +123,15 @@ function eachCons(array , n) {
   return newArray
 }
 
+
+
+// * * * * * * * * * * *  * * * * * * * *  * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+
+
+
 //Create a function that takes in an array of
 //numbers. Multiply each number together and alert 
 //the product.
@@ -101,6 +142,12 @@ function arrOfNums(arr) {
   alert(product)
 }
 arrOfNums([10,2,3])
+
+
+// * * * * * * * * * * *  * * * * * * * *  * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
 
 
 //Write a program that creates a string that represents an 
@@ -134,6 +181,11 @@ arrOfNums([10,2,3])
  console.log(board)
 
  
+// * * * * * * * * * * *  * * * * * * * *  * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+
 
  //Create a function that takes in a number.
  function thatTakesIn(n) {
@@ -148,12 +200,28 @@ arrOfNums([10,2,3])
  }
 
 
+ // * * * * * * * * * * *  * * * * * * * *  * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+
+
+
+
  //Create and array of numbers
  let arrNumb = [10,21,30,41,50,61]
 //Return a new array of numbers that includes every 
 let onlyEvens = arr => arr.filter(n=> n%2==0)
 //even number from the previous Arrays and console log results
 console.log(onlyEvens(arrNumb))
+
+
+// * * * * * * * * * * *  * * * * * * * *  * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+
+
 
 
 //Write a program that asks the user for a raw price. After that, 
@@ -165,16 +233,39 @@ let total = Number(rawPrice) + vatPrice;
 alert(`The total cost is ${total}`)
 
 
+
+// * * * * * * * * * * *  * * * * * * * *  * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+
+
+
+
 //Write a program that returns the girl's age (0-9) as an integer.
 function getAge(integer) {
   return parseInt(integer)
 }
+
+
+// * * * * * * * * * * *  * * * * * * * *  * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+
 
 //Given an integral number, determine if it's a square number:
 
 function isSquare(square) {
   return Math.sqrt(square)%1 ===0
 }
+
+
+// * * * * * * * * * * *  * * * * * * * *  * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+
 
 
 //Given a non-negative integer, 3 for example, 
@@ -189,6 +280,15 @@ return result;
 }
 
 
+
+// * * * * * * * * * * *  * * * * * * * *  * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+
+
+
+
 //Complete the function that calculates the area of the red square
 
 function squareArea(A) {
@@ -197,6 +297,15 @@ let a = A/(2* Math.PI*(90/360))
 let area = Math.pow(a,2)
 return Number(area.toFixed(2))
 }
+
+
+
+// * * * * * * * * * * *  * * * * * * * *  * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+
+
 
 //Given an array of integers,
 function maps(x) {
@@ -207,6 +316,16 @@ newArrayy.push(x[i]*2);
 }
 return newArrayy
 }
+
+
+// * * * * * * * * * * *  * * * * * * * *  * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+
+
+
+
 
 // Create a function that takes in an array.
 //If the first number, is less than the last number, 
@@ -222,6 +341,15 @@ function checkFor(arr) {
   }alert('We close in an hour!')
 }
 
+
+
+// * * * * * * * * * * *  * * * * * * * *  * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+
+
+
 // Create a function that takes in 3 numbers.
 //Console log lowest and highest values with 100,50,25. Call the 
 //function.
@@ -234,6 +362,16 @@ function threeNums(n1,n2,n3) {
 }
 threeNums(100,50,25)
 
+
+
+
+// * * * * * * * * * * *  * * * * * * * *  * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+
+
+
 //Create a function that takes in an array of numbers
 function takesInArrOf(numbers) {
 let sorted = arr.sort((a,b)=>a-b)
@@ -241,6 +379,13 @@ let sorted = arr.sort((a,b)=>a-b)
 //highest number by sorting the array
 alert(sorted [1] + sorted[sorted.length])
 }
+
+
+// * * * * * * * * * * *  * * * * * * * *  * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+
 
 //Get a dog photo from the dog.ceo api and place the
 //photo in the DOM
@@ -254,3 +399,49 @@ fetch("https://dog.ceo/api/breeds/image/random")
 .catch(err => {
     console.log(`error ${err}`)
 })
+
+
+// * * * * * * * * * * *  * * * * * * * *  * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+
+//Example fetch using pokemonapi.co
+
+document.querySelector('button').addEventListener('click', getFetch)
+
+function getFetch(params) {
+  const choice = document.querySelector('input').value
+  const url = 'https://pokeapi.co/api/v2/pokemon/'+choice
+
+  fetch(url)
+  .then(res => res.json())
+  .then(data => {
+    console.log(data)
+  })
+  .catch(err => {
+    console.log(`error ${err}`)
+  })
+}
+
+
+
+
+// * * * * * * * * * * *  * * * * * * * *  * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+
+//Complete the function that takes a non-negative integer n as input, and returns a list
+// of all the powers of 2 with the exponent ranging from 0 to n( inclusive ).
+
+function powersOfTwo(n){
+  let myArray = [ ];
+  for (let i=0; i<=n; i++){
+    myArray.push(2**i);
+  }
+  return myArray
+}
+
+const result = powersOfTwo(2)
+console.log(result)
