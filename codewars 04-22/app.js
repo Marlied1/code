@@ -445,3 +445,55 @@ function powersOfTwo(n){
 
 const result = powersOfTwo(2)
 console.log(result)
+
+
+// * * * * * * * * * * *  * * * * * * * *  * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+
+// Create a game of tic tac toe using the class constrcutor
+
+
+class gameBoard{
+  constructor(){
+      this.gameboard = [
+          ['','',''],
+          ['','',''],
+          ['','','']
+      ]
+      this.nextPieceType = 'x'
+      this.piecePlaced = false
+  }
+
+  placePiece(piece){
+      this.piecePlaced = false
+      for(let i = 0; i < 3; i++){
+          for(let j = 0; j < 3; j++){
+              if(this.gameboard[i][j] === ''){
+                  this.gameboard[i][j] = piece
+                  this.piecePlaced = true
+                  break
+              }
+          }
+          if(this.piecePlaced === true){
+              break
+          }
+      }
+      console.table(this.gameboard)
+      this.nextPieceType === 'x' ? this.nextPieceType = 'o' : this.nextPieceType = 'x'
+  }
+}
+
+// GamePlay
+// document.querySelector('button').addEventListener('click', gameplay)
+let ticTacToe = new gameBoard()
+ticTacToe.placePiece('x')
+ticTacToe.placePiece('o')
+ticTacToe.placePiece('x')
+ticTacToe.placePiece('o')
+ticTacToe.placePiece('x')
+ticTacToe.placePiece('o')
+ticTacToe.placePiece('x')
+ticTacToe.placePiece('o')
+ticTacToe.placePiece('x')
