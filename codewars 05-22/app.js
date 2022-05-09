@@ -163,3 +163,45 @@ for(person of agency){
 
 let tvShows = ['avatar','insecure', 'psych']
 tvShows.forEach(show=> console.log(show))
+
+
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+
+
+//Middle Earth is about to go to war. The forces of good will have many battles with the forces of evil. Different races will certainly be involved. Each race has a certain worth when battling against others. On the side of good we have the following races, with their associated worth:
+
+// Hobbits: 1
+// Men: 2
+// Elves: 3
+// Dwarves: 3
+// Eagles: 4
+// Wizards: 10
+// On the side of evil we have:
+
+// Orcs: 1
+// Men: 2
+// Wargs: 2
+// Goblins: 2
+// Uruk Hai: 3
+// Trolls: 5
+// Wizards: 10
+
+function goodVsEvil(good, evil){
+    let getWorth = function( side, worth ) {
+        return side.split(' ').reduce( function(result, value, index) { 
+          return result + (worth[index] * value);
+        }, 0);
+      }
+    
+      let result = getWorth( good, [1,2,3,3,4,10] ) - getWorth( evil, [1,2,2,2,3,5,10] );
+    
+      return result > 0 ? "Battle Result: Good triumphs over Evil" :
+             result < 0 ? "Battle Result: Evil eradicates all trace of Good" :
+                          "Battle Result: No victor on this battle field";
+    }
+
+
+   
