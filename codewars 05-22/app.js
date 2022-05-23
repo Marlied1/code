@@ -205,3 +205,136 @@ function goodVsEvil(good, evil){
 
 
    
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+
+//We need a simple function that determines if a plural is needed or not. It should take a number, 
+//and return true if a plural should be used with that number or false if not. This would be useful 
+//when printing out a string such as 5 minutes, 14 apples, or 1 sun.
+
+function plural(n) {
+    return !(n===1)
+}
+
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+
+
+// Create a function that divides one number by another and returns the remainder
+
+function devides(n, n2) {
+    return n % n2
+}
+let divs = devides(10,5)
+console.log(divs)
+
+
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+
+function tesScores(myScore, classScore) {
+    return myScore > classScore.reduce((a,b) => a+ b, 0) / classPoints.length
+}
+
+
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+
+
+const headsOrTails = _ => Math.random() < .5 ? 'Heads' : 'tails' 
+
+function flipFlip(n) {
+    for( let i =1; i=n; i++){
+        let result = headsOrTails()
+        console.log(result)
+    }
+}
+flipFlip(10)
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+
+//If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. 
+//The sum of these multiples is 23. Finish the solution so that it returns the sum of all the multiples
+// of 3 or 5 below the number passed in. Additionally, if the number is negative, 
+//return 0 (for languages that do have them).
+
+
+function solution(number){
+    var sum = 0;
+    
+    for(var i = 1;i< number; i++){
+      if(i % 3 == 0 || i % 5 == 0){
+        sum += i
+      }
+    }
+    return sum;
+  }
+
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+
+
+//Write a function that will find all the anagrams of a word from a list. 
+//You will be given two inputs a word and an array with words. You should return 
+//an array of all the anagrams or an empty array if there are none. For example:
+
+//anagrams('abba', ['aabb', 'abcd', 'bbaa', 'dada']) => ['aabb', 'bbaa']
+
+//anagrams('racer', ['crazer', 'carer', 'racar', 'caers', 'racer']) => ['carer', 'racer']
+
+//anagrams('laser', ['lazing', 'lazy',  'lacer']) => []
+
+
+const sort = (word) => word.split('').sort().join('');
+
+function anagrams(word, words) {
+  let token = sort(word);
+  let total = []
+
+  for (let x = 0; x < words.length; x++) {
+    if (sort(words[x]) === token) {
+      total.push(words[x])
+    }    
+  }
+  
+  return total
+}
+
+console.log(anagrams('abba', ['aabb', 'abcd', 'bbaa', 'dada']));
+
+
+
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+
+
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+
+
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+
+
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
+// * * * * * * * * * * *  * * * * * * * * * * * * * * * * * * *  * * * * * * * * 
