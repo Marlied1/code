@@ -4,3 +4,7 @@
 //fix the bug so we can all go home early
 
 //string will never be null
+
+function replaceDots(str) {
+    return str.replace(/\./g, '_');
+}
